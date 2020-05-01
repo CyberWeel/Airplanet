@@ -1,0 +1,27 @@
+.greet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: url('./../../img/background.png') center no-repeat;
+    background-size: cover;
+
+    &__popup {
+        display: flex;
+        flex-direction: column;
+
+        & > * {
+            flex: 1;
+            align-self: center;
+        }
+    }
+
+    &__logo {
+        // something
+    }
+
+    &__button {
+        font-weight: bold;
+    }
+}
