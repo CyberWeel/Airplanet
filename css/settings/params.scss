@@ -1,5 +1,6 @@
 // Глобальные переменные
 $fontSize: 16px;
+$fontFamily: "Roboto", Arial, sans-serif;
 $duration: .4s;
 
 
@@ -15,6 +16,7 @@ $duration: .4s;
     width: 90%;
     margin: 0 auto;
 }
+
 
 /*
 @mixin center {
@@ -59,9 +61,7 @@ $duration: .4s;
 
 // Общие правила
 html {
-    font-family: 'Roboto', Geneva, Arial, sans-serif !important;
-    font-weight: 300;
-    font-size: $fontSize;
+    font: 300 $fontSize $fontFamily;
 }
 
 
