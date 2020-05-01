@@ -8,8 +8,11 @@
     background-size: cover;
 
     &__popup {
+        position: relative;
         display: flex;
         flex-direction: column;
+        opacity: 0;
+        animation: intro .6s ease 1s forwards;
 
         & > * {
             flex: 1;
@@ -18,11 +21,42 @@
     }
 
     &__logo {
-        // something
+        margin-bottom: R(40px);
     }
 
     &__button {
+        display: flex;
+        align-items: center;
         font-weight: bold;
-        font-family: $fontFamily;
+        font-size: R(12px);
+        padding: R(20px);
+        border: R(1px) solid $blue;
+        border-radius: R(2px);
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: R(2px);
+        color: $blue;
+        background: transparent;
+        transition: color, background $duration;
+
+        &:after {
+            content: "";
+            display: inline-block;
+            width: R(16px);
+            height: R(16px);
+            margin-left: R(10px);
+            background: url('./../../img/icon_main.png') center no-repeat;
+            background-size: contain;
+            transition: background $duration;
+        }
+
+        &:hover {
+            color: #fff;
+            background: $blue;
+
+            &:after {
+                background: url('./../../img/icon_main_white.png') center no-repeat;
+            }
+        }
     }
 }

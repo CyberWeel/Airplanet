@@ -11,7 +11,7 @@
 <section class="greet">
     <div class="greet__popup">
         <img src="./img/logo_intro.png" alt="Логотип Airplanet" class="greet__logo">
-        <button class="greet__button">Перейти на сайт</button>
+        <a href="./main.php" class="greet__button">Перейти на сайт</a>
     </div>
 </section>
 </div>
