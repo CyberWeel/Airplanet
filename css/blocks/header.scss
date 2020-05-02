@@ -1,0 +1,96 @@
+.header {
+    background: $lightBlue;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: R(20px);
+    }
+
+    &__logo {
+        //
+
+        &-link {
+            //
+        }
+    }
+
+    &__work {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        &-phone {
+            margin-bottom: R(10px);
+            font-size: R(21px);
+            font-weight: bold;
+            text-decoration: none;
+            color: $white;
+        }
+
+        &-link {
+            font-size: R(14px);
+            font-weight: bold;
+            text-decoration: underline;
+            color: $lightGray;
+            cursor: pointer;
+
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                right: 0;
+                bottom: -R(20px);
+                width: 100%;
+                height: R(20px);
+            }
+
+            &:hover .header__work-schedule {
+                right: 0;
+                opacity: 1;
+            }
+        }
+
+        &-schedule {
+            position: absolute;
+            right: -1000vw;
+            top: calc(100% + 20px);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            font-size: R(14px);
+            text-transform: lowercase;
+            padding: R(20px);
+            border-radius: R(2px);
+            background: $white;
+            opacity: 0;
+            transition: opacity $duration $duration;
+
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                right: R(2px);
+                top: R(-14px);
+                border: R(7px) solid transparent;
+                border-bottom-color: $white;
+            }
+
+            & > * {
+                width: max-content;
+            }
+
+            & > span:first-child {
+                margin-bottom: R(10px);
+                color: $blue;
+                font-weight: bold;
+            }
+
+            & > span:last-child {
+                color: $lightBlack;
+            }
+        }
+    }
+}

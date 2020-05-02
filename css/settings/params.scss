@@ -2,7 +2,11 @@
 $fontSize: 16px;
 $fontFamily: "Roboto", Arial, sans-serif;
 $duration: .2s;
+$lightBlack: #221f1f;
 $blue: #1c5bc3;
+$lightBlue: #4b73b5;
+$lightGray: #d4dbea;
+$white: #fff;
 
 
 // Глобальные функции
@@ -12,12 +16,6 @@ $blue: #1c5bc3;
 
 
 // Глобальные миксины
-@mixin container {
-    max-width: 1100px;
-    width: 90%;
-    margin: 0 auto;
-}
-
 @mixin center {
     position: absolute;
     top: 50%;
@@ -80,4 +78,10 @@ html, body, .wrapper {
 
 button {
     font-family: $fontFamily;
+}
+
+.container {
+    max-width: 1100px;
+    width: 90%;
+    margin: 0 auto;
 }
