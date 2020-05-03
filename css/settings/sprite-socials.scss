@@ -1,0 +1,35 @@
+.sprite-socials-vk, .sprite-socials-fb,
+.sprite-socials-gp, .sprite-socials-tw,
+.sprite-socials-mail {
+    @include sprite-socials;
+}
+
+.sprite-socials-vk {
+    width: 12px;
+    height: 7px;
+    background-position: -68px -39px;
+}
+
+.sprite-socials-fb {
+    width: 6px;
+    height: 13px;
+    background-position: -10px -10px;
+}
+
+.sprite-socials-gp {
+    width: 15px;
+    height: 9px;
+    background-position: -36px -10px;
+}
+
+.sprite-socials-tw {
+    width: 11px;
+    height: 9px;
+    background-position: -71px -10px;
+}
+
+.sprite-socials-mail {
+    width: 12px;
+    height: 9px;
+    background-position: -36px -39px;
+}

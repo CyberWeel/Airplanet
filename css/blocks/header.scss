@@ -85,11 +85,11 @@
             & > span:first-child {
                 margin-bottom: R(10px);
                 color: $blue;
-                font-weight: bold;
             }
 
             & > span:last-child {
                 color: $lightBlack;
+                font-weight: 300;
             }
         }
     }
